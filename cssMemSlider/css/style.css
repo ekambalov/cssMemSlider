@@ -5,3 +5,117 @@
 body {
     background-color: #252525;
 }
+
+/* header*/
+
+.header {
+    padding: 20px 40px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+/* footer*/
+
+.footer {
+    padding: 20px 40px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer__link {
+    display: inline-block;
+    padding: 5px 10px;
+    color: inherit;
+    text-decoration: none;
+    background-color: #90119e;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.footer__link:hover {
+    transform: scale(1.05);
+    
+}
+
+
+/* item styling: */
+
+.slider__item {
+    min-width: 600px;
+    height: 450px;
+}
+.slider__meme {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* nav wrap */
+
+.slider__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.slider__meme-text {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.slider__nav {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+/* btn style */
+
+.slider__btn {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 2px solid #90119e;
+    cursor: pointer;
+    background-color: #90119e;
+    transition: 0.3s;
+}
+
+.slider__btn:hover {
+    border: 2px solid #fff;   
+    background-color: #fff;
+}
+
+
+
+/* carousel styling */
+
+.slider {
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.slider__window {
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid white;
+}
+
+.slider__carousel {
+    position: absolute;
+    left: -1240px;
+    height: 450px;  
+    display: flex;
+    gap: 20px;
+    transition: left 0.3s;
+}
