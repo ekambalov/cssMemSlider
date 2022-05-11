@@ -64,10 +64,30 @@ body {
     padding: 10px 20px;
 }
 
+.slider__text-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
 .slider__meme-text {
+    display: inline-block;
+    position: absolute;
+    top: 6.5px;
     color: white;
     font-family: sans-serif;
     text-transform: uppercase;
+    font-size: 15px;
+    transition: top 0.15s;
+}
+.slider__meme-text--move {
+    top: 30px;
 }
 
 .slider__nav {
@@ -146,3 +166,4 @@ body {
     gap: 20px;
     transition: left 0.3s;
 }
+
