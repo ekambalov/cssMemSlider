@@ -52,7 +52,7 @@ body {
     height: 500px;
     overflow: hidden;
     position: relative;
-    
+
 }
 
 .slider__carousel {
@@ -63,7 +63,7 @@ body {
     transition: left 0.3s;
 }
 
-.slider__item {  
+.slider__item {
     width: 600px;
 }
 
@@ -72,11 +72,10 @@ body {
 .slider__carousel-memes {
     height: 450px;
     top: 0;
-    z-index: -1;   
+    z-index: -1;
 }
-
     /* block memes pic*/
-.slider__item-meme {  
+.slider__item-meme {
     height: 450px;
     overflow: hidden;
     border: 2px solid white;
@@ -95,13 +94,12 @@ body {
 /* text block*/
 .slider__carousel-text {
     height: 30px;
-    top: 455px;   
+    top: 455px;
 }
 .slider__item-text {
     padding: 0 20px;
     display: inline-flex;
     align-items: center;
-    width: 600px;
     color: white;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -129,15 +127,7 @@ body {
     justify-content: center;
     cursor: pointer;
 }
-.slider__button {
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    border: 1px solid #90119e;
-    border-radius: 50%;
-    transition: 0.3s;
-    display: none;
-}
+
 
 
 .slider__btn {
@@ -164,11 +154,11 @@ body {
 }
 
 .slider__btn:checked {
-    border: 2px solid #90119e;
+    /* border: 2px solid #90119e; */
     background-color: #252525;
 }
 .slider__btn[id='r0'] {
-    right: 208px;;
+    right: 208px;
 }
 .slider__btn[id='r1'] {
     right: 177.5px;
@@ -226,38 +216,90 @@ body {
 
 
 @media (max-width: 600px) {
+    .header {
+        font-size: 20px;
+    }
+    .footer {
+        font-size: 15px;
+        padding: 0;
+    }
     .slider__window {
+        position: relative;
         width: 300px;
-        height: 400px;
+        height: 370px;
     }
     .slider__carousel {
         gap: 10px;
     }
-    .slider__item {        
+    .slider__item {
         width: 300px;
     }
     .slider__carousel-memes {
-        height: 280px; 
+        top: 0;
+        height: 280px;
     }
-    .slider__item-meme {  
+    .slider__item-meme {
         height: 280px;
         border-radius: 5px;
     }
     .slider__carousel-text {
         height: 30px;
-        top: 455px;   
+        top: 325px;
     }
-    .slider__item-text {
-        padding: 0 20px;
-        display: inline-flex;
-        align-items: center;
-        width: 600px;
-        color: white;
-        font-family: sans-serif;
-        text-transform: uppercase;
-        font-size: 15px;
-        transition: top 0.15s;
+
+    .slider__nav-wrapper {
+        top: 290px;
+        right: 50%;
+        transform: translateX(50%);
+        padding-right: 0;
     }
+    .slider__btn{
+        top: 297.6px;
+    }
+    #r0:checked ~ .slider__carousel {
+        left: 0;
+    }
+
+    #r1:checked  ~ .slider__carousel {
+        left: -310px;
+    }
+    #r2:checked  ~ .slider__carousel {
+        left: calc(-2*310px);
+    }
+    #r3:checked  ~ .slider__carousel {
+        left: calc(-3*310px);
+    }
+    #r4:checked  ~ .slider__carousel {
+        left: calc(-4*310px);
+    }
+    #r5:checked  ~ .slider__carousel {
+        left: calc(-5*310px);
+    }
+    #r6:checked  ~ .slider__carousel {
+        left: calc(-6*310px);
+    }
+    .slider__btn[id='r0'] {
+        right: 232.5px;
+    }
+    .slider__btn[id='r1'] {
+        right: 202.5px;
+    }
+    .slider__btn[id='r2'] {
+        right: 172.5px;
+    }
+    .slider__btn[id='r3'] {
+        right: 142px;
+    }
+    .slider__btn[id='r4'] {
+        right: 112.5px;
+    }
+    .slider__btn[id='r5'] {
+        right: 82.5px;
+    }
+    .slider__btn[id='r6'] {
+        right: 52.5px;
+    }
+
 }
 
 
